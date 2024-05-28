@@ -1,6 +1,6 @@
 /**
-* Template Name: Arsha
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Template Name: Day
+* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
 * Updated: May 18 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -105,13 +105,6 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
    * Init swiper sliders
    */
   function initSwiper() {
@@ -123,29 +116,10 @@
   window.addEventListener('load', initSwiper);
 
   /**
-   * Frequently Asked Questions Toggle
+   * Initiate glightbox
    */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
-    });
-  });
-
-  /**
-   * Animate the skills items on reveal
-   */
-  let skillsAnimation = document.querySelectorAll('.skills-animation');
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = item.querySelectorAll('.progress .progress-bar');
-        progress.forEach(el => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%';
-        });
-      }
-    });
+  const glightbox = GLightbox({
+    selector: '.glightbox'
   });
 
   /**
