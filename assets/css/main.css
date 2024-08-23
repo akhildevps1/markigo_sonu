@@ -850,6 +850,7 @@ section,
   padding-bottom: 0;
   position: relative;
   z-index: 2;
+  color: #30b44a;
 }
 
 .section-title span {
